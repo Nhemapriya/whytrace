@@ -56,6 +56,3 @@ Thumbs.db
 .env.*
 *.env
 
-# Project-specific: virtualenv created inside package dir
-whytrace/pyvenv.cfg
-
