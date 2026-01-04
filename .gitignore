@@ -13,20 +13,7 @@ eggs/
 pip-wheel-metadata/
 
 # Virtual environments
-.venv/
-venv/
-env/
-ENV/
 .conda/
-
-# Testing / coverage
-.pytest_cache/
-.coverage
-.coverage.*
-coverage.xml
-htmlcov/
-nosetests.xml
-.cache/
 
 # Type checkers / linters
 .mypy_cache/
@@ -38,14 +25,6 @@ ruff.log
 # PyInstaller
 *.spec
 *.manifest
-
-# Jupyter
-.ipynb_checkpoints/
-
-# IDE / Editors
-.vscode/
-.idea/
-*.code-workspace
 
 # OS files
 .DS_Store

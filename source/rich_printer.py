@@ -44,12 +44,23 @@ class RichDecisionRenderer:
                     Text(f"⛔ Short-circuited at {stopped_at}", style="bold red")
                 )
         else:
-            result = eval(node.source, {}, context)
-            icon = "✅" if result else "❌"
-            color = "green" if result else "red"
-            branch = parent.add(
-                Text(f"{node.node_type} {node.source} → {icon}", style=color)
-            )
+            try:
+                result = eval(node.source, {}, context)
+                icon = "✅" if result else "❌"
+                color = "green" if result else "red"
+                branch = parent.add(
+                    Text(f"{node.node_type} {node.source} → {icon}", style=color)
+                )
+            except Exception:
+                parent.add(
+                    Text(
+                        f"{node.node_type} {node.source} → ⚠ depends on runtime (not evaluable)",
+                        style="yellow",
+                    )
+                )
+                return
+
+
 
         if result:
             for child in node.children:
