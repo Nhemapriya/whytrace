@@ -2,7 +2,7 @@
 
 Explain and visualize why your Python function took a particular control-flow path for a given set of inputs.
 
-`whytrace` helps evaluate your `if` / `elif` / `else` conditions (including short-circuiting `and`/`or`), and renders a rich, human-friendly decision tree. It also steps through `for` and `while` loops, showing per-iteration state and flow-control (`break`, `continue`, `pass`) so you can quickly see what executed and why.
+`whytrace` helps evaluate your `if` / `elif` / `else` conditions (including short-circuiting `and`/`or`), and renders a rich, human-friendly decision tree. It also steps through loops, showing per-iteration state and flow-control (`break`, `continue`, `pass`) so you can quickly see what executed and why.
 
 ---
 
@@ -165,7 +165,6 @@ process(
 
 - `if` / `elif` / `else`
 - Boolean operations: `and`, `or` (with explicit short-circuit visibility)
-- `for` loops (per-iteration state shown)
 - Flow nodes: `break`, `continue`, `pass`
 
 ---

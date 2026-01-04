@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "whytrace"
-version = "0.1.1"
+version = "0.1.4"
 description = "A conditional logic visualizer for Python"
 authors = [{ name = "Hemapriya N" }]
 readme = "README.md"
